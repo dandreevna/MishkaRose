@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Мишки из роз</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+
+        <img src="img/icon.png" class="btnUp">
+
+        <div id="myModal" class="modal"> 
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <center>
+                        <p>Пожалуйста, оформите заявку, и наш менеджер свяжется с вами в ближайшее время.</p>
+                    </center>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="modal_form" action="" >
+                        <p>Имя</p>
+                        <input type="text" name="name" class="user check" data-validation="required"><br> 
+                        <p>Телефон</p>
+                        <input type="text" name="phonenumber" class="phone check" data-validation="required">                    
+                </div>
+                <div class="modal-footer">
+                        <center><input type="button" id="btn_modal_form" class="btn" value="Отправить" /></center>
+                        <p>Согласие на обработку персональных данных</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <img src="img/nav.png" id="nav">
+            <a href="#" class="logo">MishkaRose</a>
+            <ul class="menu">
+                <li><a href="#PresentMishka">О МИШКАХ</a></li>
+                <li><a href="#SelectMishka">КАТАЛОГ</a></li>           
+                <li><a href="#reviews">ОТЗЫВЫ</a></li>
+                <li><a href="#footer">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+
+        <section class="MishkaRose">
+            <div class="wrapper">
+                <img src="img/teddy.png" id="teddy">
+                <h>Мишки из роз</h><br>
+                <h>ручной работы</h>
+                <div class="items_MishkaRose"> 
+                    <div class="item_MishkaRose">
+                        <img src="img/icon1.png">
+                        <p>Быстрая доставка</p>
+                    </div>
+                    <div class="item_MishkaRose">
+                        <img src="img/icon2.png">
+                        <p>Гарантия возврата денег, если товар будет с браком</p>
+                    </div>
+                    <div class="item_MishkaRose">
+                        <img src="img/icon3.png">
+                        <p>Скидка на повторный заказ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+                
+        <section class="SelectMishka" id="SelectMishka">
+            <div class="wrapper">
+                <center><h1>Выберите своего мишку из роз</h1></center>
+
+                <div class="items_white1"> 
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/01.jpg" id="dut_1">
+                        </div>
+                        <h2>Белый мишка из роз</h2>
+                        <h2>MishkaRose 20 см</h2>
+                        <center><h3>2490<small>&#8381</small><sup>3000<small>&#8381</small></sup></h3></center>
+                        <p class="p_1">Мишка из белых 3D</p>
+                        <p>Высота: 20 см</p>
+                        <hr>
+                        <p>Кол-во роз: 260 шт</p>
+                        <hr>
+                        <p>Размер роз: 1,5 см</p>
+                        <input class="btn btn_modal" type="submit" value="КУПИТЬ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/02.jpg" id="dut_2">
+                        </div>
+                        <h2>Красный мишка из роз</h2>
+                        <h2>MishkaRose 20 см</h2>
+                        <center><h3>2490<small>&#8381</small><sup>3000<small>&#8381</small></sup></h3></center>
+                        <p class="p_1">Мишка из белых 3D</p>
+                        <p>Высота: 20 см</p>
+                        <hr>
+                        <p>Кол-во роз: 260 шт</p>
+                        <hr>
+                        <p>Размер роз: 1,5 см</p>                    
+                        <input class="btn btn_modal" type="submit" value="КУПИТЬ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/03.jpg" id="dut_3">
+                        </div>
+                        <h2>Розовый мишка из роз</h2>
+                        <h2>MishkaRose 20 см</h2>
+                        <center><h3>2490<small>&#8381</small><sup>3000<small>&#8381</small></sup></h3></center>
+                        <p class="p_1">Мишка из белых 3D</p>
+                        <p>Высота: 20 см</p>
+                        <hr>
+                        <p>Кол-во роз: 260 шт</p>
+                        <hr>
+                        <p>Размер роз: 1,5 см</p>
+                        <input class="btn btn_modal" type="submit" value="КУПИТЬ">
+                    </div>
+                </div>
+
+            </div>
+        </section>   
+
+        <section class="PresentMishka" id="PresentMishka">
+            <div class="wrapper">
+                <p>Медвежонок из роз – </p>
+                <p>необычный подарок для девушки!</p>
+                <img src="img/teddy3.png" id="PresentMishka">
+
+            </div>
+        </section>
+
+        <section class="PresentMishka2">
+            <div class="wrapper">
+                <center><p>Если вы давно искали для девушки действительно необычный подарок – ваши поиски окончены. Хит прямиком из США – очаровательные медвежата, собранные из латексных 3D роз.</p></center>
+                <img src="img/teddy2.png" id="PresentMishka2">
+
+                <div class="items_PresentMishka"> 
+                    <div class="item_PresentMishka i_1">
+                        <h4>Полностью ручная работа</h4>
+                        <p>Каждый мишка бережно собран вручную мастерами-флористами</p>
+                    </div>
+                    <div class="item_PresentMishka i_2">
+                        <h4>Более 500 роз</h4>
+                        <p>Розы, сделанные из фоамирана, имеют нежную бархатистую текстуру, приятную на ощупь</p>
+                    </div>
+                    <div class="item_PresentMishka i_3">
+                        <h4>Бесплатная упаковка</h4>
+                        <p>Красивая подарочная коробка, перевязанная брендированной лентой – в подарок</p>
+                    </div>
+                    <div class="item_PresentMishka i_4">
+                        <h4>Все мишки имеют обалденный запах</h4>
+                        <p>На выбор можно заказать мишку с ароматом манго, ванили или кокоса</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discount">
+            <div class="wrapper">
+                <center><p>Закажи двух мишек и получи скидку в 50% на второй заказ!</p></center>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="wrapper">
+                <center><h1>Отзывы</h1></center>
+                <div class="owl-carousel owl-theme">
+                    <div class="item_reviews" class="item">
+                       <!--  <img src="img/photo1.jpg" alt=""> -->
+                        <center><h4>Олеся Терещенко</h4></center>
+                        <p>"Подарила мишку из роз подруге. Долго думала, понравится ли он ей. В итоге не прогадала. Праздновали день рождение подруги в ресторане. Весь вечер гости подходили и просили сфоткаться с мишкой. Вот такой популярный оказался подарок!"</p>
+                    </div>
+                    <div class="item_reviews" class="item">
+                        <!-- <img src="img/photo2.jpg" alt=""> -->
+                        <center><h4>Илья Новиков</h4></center>
+                        <p>"Решил подарить мишку своей девушке просто так, без повода. Сколько же было эмоций! И правда, эти мишки очень приятны на ощупь, да и выглядят очень круто. Если не знаете, чем удивить свою вторую половинку, то мишка из роз - лучший вариант!"</p>
+                    </div>
+                    <div class="item_reviews" class="item">
+                        <!-- <img src="img/photo3.jpg" alt=""> -->
+                        <center><h4>Антон Молчанов</h4></center>
+                        <p>"Девушка была в восторге после того, как увидела мишку из роз. Потом мне сказала, что уже давно мечтала о таком. Беспроигрышный подарок, который не оставит равнодушной ни одного человека!"</p>
+                    </div>   
+                </div>
+                <center><input class="btn btn_modal" type="submit" value="ЗАКАЗАТЬ"></center>
+            </div>
+        </section>
+
+       
+        <footer id="footer">
+            <div class="wrapper">
+                <center><a href="mailto:monitoring@mail.ru">ulyanov_dima@bk.ru</a></center>
+                <center><a href="confidentiality.html" target="_blank">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></center>
+            </div>
+        </footer>
+
+    </body>
+</html>

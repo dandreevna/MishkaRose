@@ -1,0 +1,497 @@
+.btnUp{
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 5;
+    opacity: 0.6;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border-radius: 10px;
+}
+
+.btnUp:hover{
+    opacity: 0.9;
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.btnUp:focus{
+    opacity: 1;
+}
+
+nav {   
+    @font-face {
+        font-family: Gotham Pro;
+        src: url('../font/Gotham.ttf');
+    }
+    font: 16px/30px 'Gotham Pro', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    z-index: 5;
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    height: 70px;
+    background: #fff;
+    .logo{
+        position: absolute;
+        left: 120px;
+        color: @color_black_text;
+        font: 16px/30px 'subset', sans-serif;
+        font-size: 45px;
+        padding-top: 19px;
+        text-decoration: none;
+    }
+    #nav{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 20px;
+        top: 14px;
+        display: none;
+        cursor: pointer;
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        position:relative;       
+        li{
+            padding-top: 19px;
+            padding-left: 35px;
+        }
+        li:last-child{
+            padding-right: 100px;
+        }
+        li a{
+            color: @color_black_text;
+            font-weight: bold;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        li a:focus{
+            color: @color_red;
+        }
+        li a:hover{
+            color: @color_red;
+        }
+    }
+}
+
+.MishkaRose{
+    margin-top: 70px;
+    background-image: url('../img/fon0.jpg');
+    background-position-x: 50%;
+    background-size: cover;
+    padding-top:130px; 
+    padding-bottom: 160px;
+    h{
+        font: 95px/95px 'subset', sans-serif;
+        color: @color_red;
+        padding-left: 40px;
+    }
+    #teddy{
+        position:absolute;
+        right: 0;
+        top: 0px;
+        width: 430px;
+        height: auto;
+    }
+    .items_MishkaRose{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 730px;
+        margin-left: -20px;
+        .item_MishkaRose{
+            margin-top: 80px;
+            text-align: center;
+            flex-basis: 220px;
+            p{
+                line-height: 1.2;
+                font-size: 15px;
+            }
+        }
+    }    
+}
+
+.SelectMishka{
+    padding-top: 70px;
+    padding-bottom: 0;
+    h1{
+        font: 65px/55px 'subset', sans-serif;
+        color: @color_black_text;
+        padding-bottom: 60px;
+    }
+    h2{
+        font: 30px/25px 'subset', sans-serif;
+        color: @color_red;
+        padding-bottom: 10px;
+    }
+    h3{
+        font-size: 37px;
+        color: @color_red;
+        font-weight: bold;
+        border-bottom: 0.5px solid @color_red;
+        padding-bottom: 22px;
+        margin-top: 20px;
+        width: 181px;
+    }
+    sup{
+        font-size: 16px;
+        color: #4A4A45;
+        font-weight: normal;
+        padding-left:5px;
+        text-decoration: line-through;
+    }
+    hr{
+        border: 0.5px solid #E9E9E7;
+    }
+    .items_white1{
+        .row-flex();
+        justify-content: space-around;
+        .item_white1{
+            .col();
+            .size(4); 
+            .size-md(6);
+            .size-xs(12);           
+            text-align: center;
+            border: 1px solid #E9E9E7;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 35px;
+            margin-top: 24px;
+            .img_dut{
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top:17px;
+            }
+            p{
+                color: #4A4A45;
+                margin: 12px 0;
+                padding: 0;
+                line-height: 1.2;
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+            .p_1{
+                margin-bottom: 30px;
+                margin-top: 30px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.PresentMishka{
+    background-image: url('../img/fon3.jpg');
+    background-repeat: no-repeat;
+    padding-top:270px;
+    padding-bottom:200px;
+    position:relative;
+    p{
+        font: 60px/60px 'subset', sans-serif;
+        color: @color_red;
+    }
+    #PresentMishka{
+        width: 500px;
+        height: auto;
+        position: absolute;
+        right: 0px;
+        top: -170px;
+    }
+}
+
+.PresentMishka2{
+    background-image: url('../img/fon2.jpg');
+    background-position-x: 50%;
+    background-size: cover;
+    p{
+        width: 70%;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    #PresentMishka2{
+        width: 60%;
+    }
+    .items_PresentMishka{
+        width: 38%;
+        float: right;
+        .item_PresentMishka{
+            h4{
+                font: 20px/20px 'Gotham Pro', sans-serif;
+                font-weight: bold;
+                margin-left: 100px;
+            }
+            p{
+                font: 16px/20px 'Gotham Pro', sans-serif;
+                width: calc(100%-100px);
+                margin:0;
+                margin-top: 11px;
+                margin-left: 100px;
+            }
+            margin-bottom: 37px;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 130px;
+            padding-left: 55px;
+        }
+        .i_1{
+            background-image: url('../img/PresentMishka_1.png');
+        }
+        .i_2{
+            background-image: url('../img/PresentMishka_2.png');
+        }
+        .i_3{
+            background-image: url('../img/PresentMishka_3.png');
+        }
+        .i_4{
+            background-image: url('../img/PresentMishka_4.png');
+        }
+    }
+}
+
+.discount{
+    background-image: url('../img/fon1.jpg');
+    background-position-y: 50%;
+    background-position-x: 40%;
+    background-size: cover;
+    padding-top:160px;
+    padding-bottom: 160px;
+    p{
+        font: 60px/60px 'subset', sans-serif;
+        color: @color_red;
+        padding-left: 20%;
+        padding-right:20%;
+    }
+}
+
+.reviews{
+    h1{
+        font: 60px/60px 'subset', sans-serif;
+        color: @color_black_text;
+        margin-bottom: 20px;
+        margin-top: -70px;
+    }
+    padding-bottom: 80px;
+    .item_reviews{
+        padding: 30px;
+        img{
+            border: 6px solid #E9E9E7;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-radius: 150px;
+            width: 70%;
+            height: auto;
+            margin-bottom: 40px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        h4{
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+@media screen and (max-width: 1165px) {
+    .MishkaRose{
+        padding-bottom: 90px;
+        padding-top:100px;
+        #teddy{
+            display: none;
+        }
+        .items_MishkaRose{
+            justify-content: space-around;
+            margin-left: 0;
+            width: 90%;
+            .item_MishkaRose{
+                margin-top: 50px;
+            }
+        }
+    }
+    .PresentMishka{
+        #PresentMishka{
+            display: none;
+        }
+    }
+    .PresentMishka2{
+        p{
+            margin-bottom: 50px;
+            margin-top: 0;
+        }
+    }
+}
+
+.confidentiality{
+    padding-bottom: 40px;
+    h{
+        font-weight: bold;
+        display: inline-block;
+        margin: 30px;
+        font-size: 25px;
+    }
+    h1{
+        font-weight: bold;
+        font-size: 20px;
+        display: inline-block;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .PresentMishka2{
+        padding-bottom: 100px;
+        #PresentMishka2{
+            width: 50%;
+        }
+        .items_PresentMishka{
+            width: 48%;
+            .item_PresentMishka{
+                margin-bottom: 15px;
+                padding-top: 18px;
+                padding-bottom: 18px;
+                background-size: 110px;           
+            }
+           
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .PresentMishka2{
+        padding-bottom: 0;
+        #PresentMishka2{
+            width: 70%;
+        }
+        .items_PresentMishka{
+            width: 100%;
+            float: none;
+            margin-top: 40px;
+            .item_PresentMishka{
+                margin-bottom: 37px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                background-size: 130px;
+                padding-left: 55px;
+            }      
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    nav { 
+        #nav{
+            display: block;
+        }
+        .logo{
+            position: static;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 165px;
+        }
+        .menu{
+            display: none;
+            background-color: #fff;
+            position:absolute;
+            right: 0;
+            top: 70px;
+            padding-bottom: 20px;   
+        }
+    }
+    .discount{
+        p{
+            color: @color_red;
+            padding-left: 10%;
+            padding-right:10%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav { 
+        opacity: 1;
+        .menu{
+            width: 100%; 
+        }
+    }
+    .MishkaRose{
+        padding-top:70px;
+        h{
+            font-size: 60px;
+            line-height: 60px;
+        }
+    }
+    .PresentMishka{
+        p{
+            font: 50px/50px 'subset', sans-serif;
+        }
+    }
+    .discount{
+        padding-top:120px;
+        p{
+            font: 45px/45px 'subset', sans-serif; 
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .PresentMishka2{     
+        #PresentMishka2{
+            width: 100%;
+        }
+        .items_PresentMishka{
+            .item_PresentMishka{
+                margin-bottom: 17px;
+            }
+        }
+        margin-bottom: -30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .MishkaRose{
+        h{
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+    .PresentMishka{
+        p{
+            font: 40px/40px 'subset', sans-serif;
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .PresentMishka{
+        p{
+            font: 35px/35px 'subset', sans-serif;
+        }
+    }
+}
+
+
+ 
+
+

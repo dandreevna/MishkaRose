@@ -1,0 +1,63 @@
+@color_black_text: #150606;
+@color_red: #e93050;
+
+@font-face {
+    font-family: subset;
+    src: url('../font/subset-CopyrightHouseIndustries-NotLicensedforDesktopUse.woff');
+}
+@font-face {
+    font-family: Gotham Pro;
+    src: url('../font/Gotham.ttf');
+}
+
+.reset();
+
+body{
+    overflow-x: hidden;
+}
+
+.wrapper{
+    .wrapper();
+    position:relative; 
+    font: 16px/30px 'Gotham Pro', sans-serif;
+    color: @color_black_text; 
+}
+
+.btn{
+    padding: 13px 60px;
+    border-radius: 30px;
+    background-color: @color_red;
+    border: 0 solid @color_red; 
+    cursor: pointer;
+    color: #fff;
+    transition:all 0.2s ease;
+    font-weight: bold;
+    margin-top: 22px;
+}
+
+.btn:hover{
+    transform: scale(1.03);
+}
+
+
+footer{
+    background-color: #282828;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    .wrapper{
+        color: #fff;
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }   
+}
+
+.modal-body .err{
+    background-color: rgba(252, 125, 125,0.3);
+}
+
+
